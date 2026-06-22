@@ -3,11 +3,6 @@
 A lightweight, file-based CLI pastebin written in **Rust**.  
 Create, read, list, and delete text snippets locally with zero setup — no database, no server, no cloud.
 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
-
----
-
 ## Features
 
 - **Create** — Save text snippets with a random 6-character alphanumeric ID.
@@ -29,3 +24,21 @@ Create, read, list, and delete text snippets locally with zero setup — no data
 git clone https://github.com/yourusername/local-cli-pastebin.git
 cd local-cli-pastebin
 cargo build --release
+```
+### Usage
+```bash
+# Create a new paste
+pastebin new "Here is my secret snippet of code!"
+```
+```
+# Read a paste by ID
+pastebin read Xy7b9P
+```
+```
+# List all stored pastes
+pastebin list
+```
+```
+# Delete a paste
+pastebin delete Xy7b9P
+```
